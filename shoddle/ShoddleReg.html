@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>  </title>
+<link rel = "stylesheet" title = "basic style" type = "text/css" 
+      href = "./ShoddleReg.css" media = "all" />
+<script type = "text/javascript">
+   var xhr;
+
+   if (window.ActiveXObject)
+   {
+     xhr = new ActiveXObject("Microsoft.XMLHTTP");
+   }
+   else if (window.XMLHttpRequest)
+   {
+     xhr = new XMLHttpRequest();
+   }
+
+   function callServer()
+   {
+     var user = document.getElementById("username").value;
+     var url = "./shoodleREGcheck.php?username=" +escape(user);
+
+     xhr.open("GET",url,true);
+
+     xhr.onreadystatechange = alertPage;
+
+     xhr.send(null);
+   }
+
+   function checkPas(){
+     var pas1 = document.getElementById("password").value;
+     var pas2 = document.getElementById("conPas").value;
+     
+     if (pas1 != pas2){
+        return alert("There was something wrong with the confirmation or your password. Please retype them.");
+     }
+   }
+
+   function alertPage()
+   {
+     if ((xhr.readyState == 4) && (xhr.status == 200))
+     {
+        var response = xhr.responseText;
+        var user = document.getElementById("username").value;
+        if (response == user)
+        {
+           alert("Username already exists. Please choose another");
+           return;
+        }
+     }
+   }
+   
+
+   
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="center">
+<div class="logo1">
+<img src="clock.png" alt="Clock Logo" width="100" height="100"/>
+</div>
+<div class = "header">
+
+<h1> Shoodle</h1>
+
+</div>
+
+<div class = "scrollbar">
+<ul style="list-style-type:none">
+
+
+
+
+<li><a href= "ShodTutorial.html"> ShoodFunny </a></li>
+<li><a href= "LearnCs.html"> ShoodLearn</a></li>
+
+<li><a href= "ContactUs.html"> Contact Us</a></li>
+
+
+</ul>
+</div>
+
+
+<div class = "headlines">
+
+<div class= "leftSide">
+
+<h2><b> Let's get started! Time to get Shoodling!</b></h2>
+<p> Lets get started, Sign Up. Congrats, once your finished you are ready to join the Shoodle Community!</p>
+</div>
+<div class= "rightSide">
+<table>
+<form method="post" action="./shoodleRegB.php">
+<tr><td>Username:</td><td><input type="text" id="username" name="user" onchange = "callServer();"></td></tr>
+<tr>
+<td>Password:</td>
+<td><input type = "password" name="pass" id = "password" size = "30"/> </td></tr>
+<tr><td>Confirm Password:</td>
+<td><input type="password" id="conPas" name="conPasswd" onchange="checkPas();"></td></tr>
+<tr><td><input type="Submit" value="Register!"></td><td><input type="reset" value="Clear"></td></tr>
+</form>
+</table>
+</div>
+</div>
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
+</div>
+
+</div>
+
+<div class=footer>
+<footer> <a href= ""> October 21st 2014</a>| <a href= ""> Damilola Shonaike</a>| <a href= ""> </a>| <a href= ""> Travis Cox</a>| <a href= ""> CS329E</a>| <a href= ""> Fall 2014</a>| 
+<br>
+<br>
+<p>CopyRight @Shoddle</p>
+</footer>
+</div>
+<script >
+checkPas(){
+
+}
+</script>
+</body>
+</html>
+

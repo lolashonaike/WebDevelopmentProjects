@@ -1,0 +1,688 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>  </title>
+<link rel = "stylesheet" title = "basic style" type = "text/css" 
+      href = "./ShoddleDay.css" media = "all" />
+</head>
+<body>
+<div class="center">
+<div class="logo1">
+<img src="clock.png" alt="Clock Logo" width="0" height="100"/>
+</div>
+<div class = "header">
+
+<h1> Shoodle</h1>
+
+</div>
+
+<div class = "scrollbar">
+<ul style="list-style-type:none">
+
+
+<li><a href= "day1.html"> MyCalendar</a></li>
+
+<li><a href= "ShodTutorial.html"> ShoodFunny</a></li>
+
+
+
+<li><a href= "ContactUs.html"> Contact Us</a></li>
+
+
+</ul>
+</div>
+
+<div class = "headlines">
+<div class="center">
+
+
+<button class="evntBut" onclick="myFunction()">Add Your Events</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var yourTime = prompt("Please enter a time for your event, please choose between 7 to 24, where 7 is 7am,7:30 is 7.5 1pm is 13 and 12 midnight is 24");
+    var yourEvent= prompt("Please enter a name for your event, make sure there are no spaces");
+
+
+
+    if (yourTime != null) {
+       if(yourTime == 7){
+          document.getElementById("td71").innerHTML =
+          "7:00am: " + yourEvent ;
+          var btn7 = document.createElement("BUTTON");
+          var t = document.createTextNode("RateMe");
+          btn7.appendChild(t);
+          document.getElementById("td71").appendChild(btn7);
+          var link7 = document.createElement('a');
+          var l= document.createTextNode("Save");
+          link7.appendChild(l);
+          link7.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+          document.getElementById("td71").appendChild(link7);
+          document.getElementById("td71").btn7.onclick=loadXMLDoc;       
+        }
+      
+        if(yourTime ==7.5){
+          document.getElementById("td75").innerHTML=
+	  "7:30am: " +yourEvent;
+          var btn75 = document.createElement("BUTTON");
+          var t1 = document.createTextNode("Save");
+          btn75.appendChild(t1);
+          document.getElementById("td75").appendChild(btn75);
+          var link75 = document.createElement('a');
+          var l1= document.createTextNode("Save");
+          link75.appendChild(l1);
+          link75.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+          document.getElementById("td75").appendChild(link75);
+	}
+	
+        if(yourTime ==8){
+	 document.getElementById("td8").innerHTML=
+	 "8:00am:"+yourEvent;   
+         var btn8 = document.createElement("BUTTON");
+         var t2 = document.createTextNode("Save");
+         btn8.appendChild(t2);
+         document.getElementById("td8").appendChild(btn8);
+         var link8 = document.createElement('a');
+         var l2= document.createTextNode("Save");
+         link8.appendChild(l2);
+         link8.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+         document.getElementById("td8").appendChild(link8);
+        }
+	  
+        if(yourTime ==8.5){
+	   document.getElementById("td85").innerHTML=
+	   "8:30am:"+yourEvent;
+           var btn85 = document.createElement("BUTTON");
+           var t3 = document.createTextNode("Save");
+           btn85.appendChild(t3);
+           document.getElementById("td85").appendChild(btn85);
+           var link85 = document.createElement('a');
+           var l3= document.createTe85xtNode("Save");
+           link85.appendChild(l3);
+           link85.setAttribute('href', 'shoodleChoices.php');
+           document.getElementById("td85").appendChild(link85);
+        }
+	
+        if (yourTime == 9){
+	   document.getElementById("td9").innerHTML=
+	   "9:00am:"+yourEvent;
+            var btn9 = document.createElement("BUTTON");
+            var t4 = document.createTextNode("Save");
+            btn9.appendChild(t4);
+            document.getElementById("td9").appendChild(btn9);
+            var link9 = document.createElement('a');
+            var l4= document.createTextNode("Save");
+            link9.appendChild(l);
+            link9.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td9").appendChild(link9);
+         }
+	 
+         if (yourTime ==9.5){
+	   document.getElementById("td95").innerHTML=
+	   "9:30am:"+yourEvent;
+            var btn95 = document.createElement("BUTTON");
+            var t5 = document.createTextNode("Save");
+            btn95.appendChild(t5);
+            document.getElementById("td95").appendChild(btn95);
+            var link95 = document.createElement('a');
+            var l5= document.createTextNode("Save");
+            link95.appendChild(l5);
+            link95.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td95").appendChild(link95);
+	  }
+	  
+          if (yourTime == 10){
+	    document.getElementById("td10").innerHTML=
+	    "10:00am:"+yourEvent;
+            var btn10 = document.createElement("BUTTON");
+            var t6 = document.createTextNode("Save");
+            btn10.appendChild(t6);
+            document.getElementById("td10").appendChild(btn10);
+            var link10 = document.createElement('a');
+            var l6= document.createTextNode("Save");
+            link10.appendChild(l6);
+            link10.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td10").appendChild(link10);
+          }
+	  
+          if (yourTime == 10.5){
+	    document.getElementById("td105").innerHTML=
+	    "10:30am:"+yourEvent;
+            var btn105 = document.createElement("BUTTON");
+            var t7 = document.createTextNode("Save");
+            btn105.appendChild(t7);
+            document.getElementById("td105").appendChild(btn105);
+            var link105 = document.createElement('a');
+            var l7= document.createTextNode("Save");
+            link105.appendChild(l7);
+            link105.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td105").appendChild(link105);
+          }
+	  
+          if (yourTime == 11){
+	     document.getElementById("td11").innerHTML=
+	     "11:00am:"+yourEvent;
+             var btn11 = document.createElement("BUTTON");
+             var t8 = document.createTextNode("Save");
+             btn11.appendChild(t8);
+             document.getElementById("td11").appendChild(btn11);
+             var link11 = document.createElement('a');
+             var l8= document.createTextNode("Save");
+             link11.appendChild(l8);
+             link11.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+             document.getElementById("td11").appendChild(link11);
+          }
+	  
+          if (yourTime == 11.5){
+	    document.getElementById("td115").innerHTML=
+	    "11:30am:"+ yourEvent;
+            var btn115 = document.createElement("BUTTON");
+            var t9 = document.createTextNode("Save");
+            btn115.appendChild(t9);
+            document.getElementById("td115").appendChild(btn115);
+            var link115 = document.createElement('a');
+            var l9= document.createTextNode("Save");
+            link115.appendChild(l9);
+            link115.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td115").appendChild(link115); 
+	 }
+	 
+         if (yourTime == 12){
+	   document.getElementById("td12").innerHTML=
+           "12:00pm:"+yourEvent;
+           var btn12 = document.createElement("BUTTON");
+           var t10 = document.createTextNode("Save");
+           btn12.appendChild(t10);
+           document.getElementById("td12").appendChild(btn12);
+           var link12 = document.createElement('a');
+           var l10 = document.createTextNode("Save");
+           link12.appendChild(l10);
+           link12.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+           document.getElementById("td12").appendChild(link12);
+        }
+        
+        if (yourTime == 13){
+	    document.getElementById("td13").innerHTML=
+            "1:00pm:"+yourEvent;
+            var btn13 = document.createElement("BUTTON");
+            var t11 = document.createTextNode("Save");
+            btn13.appendChild(t11);
+            document.getElementById("td13").appendChild(btn13);
+            var link13 = document.createElement('a');
+            var l11= document.createTextNode("Save");
+            link13.appendChild(l11);
+            link13.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td13").appendChild(link13);
+         }
+	 
+         if (yourTime ==14){
+	   document.getElementById("td14").innerHTML=
+           "2:00pm:"+ yourEvent;
+           var btn14 = document.createElement("BUTTON");
+           var t12 = document.createTextNode("Save");
+           btn14.appendChild(t12);
+           document.getElementById("td14").appendChild(btn14);
+           var link14 = document.createElement('a');
+           var l12= document.createTextNode("Save");
+           link14.appendChild(l12);
+           link14.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+           document.getElementById("td14").appendChild(link14);
+	 }
+	 
+         if (yourTime == 12.5){
+	    document.getElementById("td125").innerHTML=
+	    "12:30pm:"+yourEvent;
+            var btn125 = document.createElement("BUTTON");
+            var t13 = document.createTextNode("Save");
+            btn125.appendChild(t13);
+            document.getElementById("td125").appendChild(btn125);
+            var link125 = document.createElement('a');
+            var l13= document.createTextNode("Save");
+            link125.appendChild(l13);
+            link125.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td125").appendChild(link125);
+        }
+	
+        if (yourTime == 13.5){
+	    document.getElementById("td135").innerHTML=
+	    "1:30pm:"+yourEvent;
+            var btn135 = document.createElement("BUTTON");
+            var t14 = document.createTextNode("Save");
+            btn135.appendChild(t135);
+            document.getElementById("td135").appendChild(btn135);
+            var link135 = document.createElement('a');
+            var l14= document.createTextNode("Save");
+            link135.appendChild(l14);
+            link135.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td135").appendChild(link135);
+	}
+        
+        if (yourTime ==14.5){
+            document.getElementById("td145").innerHTML=
+            "2:30pm:"+yourEvent;
+            var btn145 = document.createElement("BUTTON");
+            var t15 = document.createTextNode("RateMe");
+            btn145.appendChild(t15);
+            document.getElementById("td145").appendChild(btn145);
+            var link145 = document.createElement('a');
+            var l15= document.createTextNode("Save");
+            link145.appendChild(l15);
+            link145.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td145").appendChild(link145);
+         }
+         if (yourTime == 15.5){
+           document.getElementById("td155").innerHTML=
+           "3:30pm:"+yourEvent;
+           var btn155 = document.createElement("BUTTON");
+           var t16 = document.createTextNode("RateMe");
+           btn155.appendChild(t16);
+           document.getElementById("td155").appendChild(btn155);
+           var link155 = document.createElement('a');
+           var l16= document.createTextNode("Save");
+           link155.appendChild(l16);
+           link155.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+           document.getElementById("td155").appendChild(link155);
+        }
+       
+        if (yourTime == 15){
+            document.getElementById("td15").innerHTML=
+            "3:00pm:" +yourEvent;
+            var btn15 = document.createElement("BUTTON");
+            var t17 = document.createTextNode("RateMe");
+            btn15.appendChild(t17);
+            document.getElementById("t17").appendChild(btn15);
+            var link15 = document.createElement('a');
+            var l17= document.createTextNode("Save");
+            link15.appendChild(l);
+            link15.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td15").appendChild(link15);
+         }
+         
+         if (yourTime ==16){
+            document.getElementById("td16").innerHTML=
+            "4:00pm:" +yourEvent;
+            var btn16 = document.createElement("BUTTON");
+            var t18 = document.createTextNode("RateMe");
+            btn16.appendChild(t18);
+            document.getElementById("td16").appendChild(btn16);
+            var link16 = document.createElement('a');
+            var l18= document.createTextNode("Save");
+            link16.appendChild(l18);
+            link16.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+            document.getElementById("td16").appendChild(link16);
+        }
+        
+        if (yourTime ==16.5){
+           document.getElementById("td165").innerHTML=
+           "4:30pm:"+yourEvent;
+           var btn165 = document.createElement("BUTTON");
+           var t19 = document.createTextNode("RateMe");
+           btn165.appendChild(t);
+           document.getElementById("td165").appendChild(btn165);
+           var link165 = document.createElement('a');
+           var l19= document.createTextNode("Save");
+           link165.appendChild(l19);
+           link165.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+           document.getElementById("td165").appendChild(link165); 
+      }
+      
+      if (yourTime ==17){
+          document.getElementById("td17").innerHTML=
+          "5:00pm:"+yourEvent;
+          var btn17 = document.createElement("BUTTON");
+          var t20 = document.createTextNode("RateMe");
+          btn17.appendChild(t20);
+          document.getElementById("td17").appendChild(btn17);
+          var link17 = document.createElement('a');
+          var l20= document.createTextNode("Save");
+          link17.appendChild(l20);
+          link17.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+          document.getElementById("td17").appendChild(link17);
+      }
+      
+      if (yourTime ==17.5){
+         document.getElementById("td175").innerHTML=
+         "5:30pm :"+yourEvent;  
+         var btn175 = document.createElement("BUTTON");
+         var t21 = document.createTextNode("RateMe");
+         btn175.appendChild(t21);
+         document.getElementById("td175").appendChild(btn175);
+         var link175 = document.createElement('a');
+         var l21= document.createTextNode("Save");
+         link175.appendChild(l21);
+         link175.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+         document.getElementById("td175").appendChild(link175);
+     }
+     
+     if (yourTime== 18){
+        document.getElementById("td18").innerHTML=
+        "6:00pm:"+yourEvent;
+        var btn18 = document.createElement("BUTTON");
+        var t22 = document.createTextNode("RateMe");
+        btn18.appendChild(t22);
+        document.getElementById("td18").appendChild(btn18);
+        var link18 = document.createElement('a');
+        var l22= document.createTextNode("Save");
+        link18.appendChild(l22);
+        link18.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td18").appendChild(link18);
+     }
+     
+     if (yourTime == 18.5){
+        document.getElementById("td185").innerHTML=
+        "6:30pm: "+yourEvent;
+        var btn185 = document.createElement("BUTTON");
+        var t23 = document.createTextNode("RateMe");
+        btn185.appendChild(t23);
+        document.getElementById("td185").appendChild(btn185);
+        var link185 = document.createElement('a');
+        var l23= document.createTextNode("Save");
+        link185.appendChild(l23);
+        link185.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td185").appendChild(link185);      
+     }
+     
+     if (yourTime == 19){
+        document.getElementById("td19").innerHTML=
+        "7:00pm: "+yourEvent;
+        var btn19 = document.createElement("BUTTON");
+        var t24 = document.createTextNode("RateMe");
+        btn19.appendChild(t24);
+        document.getElementById("td19").appendChild(btn19);
+        var link7 = document.createElement('a');
+        var l24= document.createTextNode("Save");
+        link19.appendChild(l24);
+        link19.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td19").appendChild(link19);
+     }
+     
+     if (yourTime == 19.5){
+        document.getElementById("td195").innerHTML=
+        "7:30pm:"+yourEvent;
+        var btn195 = document.createElement("BUTTON");
+        var t25 = document.createTextNode("RateMe");
+        btn195.appendChild(t25);
+        document.getElementById("td195").appendChild(btn195);
+        var link195 = document.createElement('a');
+        var l25= document.createTextNode("Save");
+        link195.appendChild(l25);
+        link195.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td195").appendChild(link195);
+     }
+     
+     if (yourTime == 20){
+        document.getElementById("td20").innerHTML=
+        "8:00pm:"+yourEvent; 
+        var btn20 = document.createElement("BUTTON");
+        var t26 = document.createTextNode("RateMe");
+        btn20.appendChild(t26);
+        document.getElementById("td20").appendChild(btn20);
+        var link20 = document.createElement('a');
+        var l26= document.createTextNode("Save");
+        link20.appendChild(l26);
+        link20.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td20").appendChild(link20);
+      }
+      
+      if (yourTime == 20.5){
+        document.getElementById("td205").innerHTML=
+        "8:30pm:"+yourEvent;    
+        var btn205 = document.createElement("BUTTON");
+        var t27 = document.createTextNode("RateMe");
+        btn205.appendChild(t27);
+        document.getElementById("td205").appendChild(btn205); 
+        var link205 = document.createElement('a');
+        var l27= document.createTextNode("Save");
+        link205.appendChild(l);
+        link205.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td205").appendChild(link205);
+      }
+      
+      if (yourTime == 21){
+        document.getElementById("td21").innerHTML=
+        "9:00pm: "+yourEvent;
+        var btn21 = document.createElement("BUTTON");
+        var t28 = document.createTextNode("RateMe");
+        btn21.appendChild(t28);
+        document.getElementById("td21").appendChild(btn21);
+        var link21 = document.createElement('a');
+        var l28 = document.createTextNode("Save");
+        link21.appendChild(l28);
+        link21.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td21").appendChild(link21);
+      }
+      
+      if (yourTime == 21.5){
+         document.getElementById("td215").innerHTML=
+         "9:30pm: "+yourEvent;
+         var btn215 = document.createElement("BUTTON");
+         var t29 = document.createTextNode("RateMe");
+         btn215.appendChild(t29);
+         document.getElementById("td215").appendChild(btn215);
+         var link215 = document.createElement('a');
+         var l29= document.createTextNode("Save");
+         link215.appendChild(l29);
+         link215.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+         document.getElementById("td215").appendChild(link215);
+      }
+  
+      if (yourTime == 22){
+         document.getElementById("td22").innerHTML=
+         "10:00pm: "+yourEvent;
+         var btn22 = document.createElement("BUTTON");
+         var t30 = document.createTextNode("RateMe");
+         btn22.appendChild(t30);
+         document.getElementById("td22").appendChild(btn22);
+         var link22 = document.createElement('a');
+         var l30= document.createTextNode("Save");
+         link22.appendChild(l30);
+         link22.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+         document.getElementById("td22").appendChild(link22);
+      }
+      
+      if (yourTime ==22.5){
+        document.getElementById("td225").innerHTML=
+        "10:30pm: "+yourEvent;
+        var btn225 = document.createElement("BUTTON");
+        var t31 = document.createTextNode("RateMe");
+        btn225.appendChild(t31);
+        document.getElementById("td225").appendChild(btn225);
+        var link225 = document.createElement('a');
+        var l31= document.createTextNode("Save");
+        link225.appendChild(l31);
+        link225.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td225").appendChild(link225);
+      }
+ 
+      if (yourTime ==23){
+        document.getElementById("td23").innerHTML=
+        "11:00pm :"+yourEvent;
+        var btn23 = document.createElement("BUTTON");
+        var t32 = document.createTextNode("RateMe");
+        btn23.appendChild(t32);
+        document.getElementById("td23").appendChild(btn23);
+        var link23 = document.createElement('a');
+        var l32= document.createTextNode("Save");
+        link32.appendChild(l32);
+        link32.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td23").appendChild(link32);
+      }
+      
+      if (yourTime ==23.5){
+        document.getElementById("td235").innerHTML=
+        "11:30pm :"+yourEvent;
+        var btn235 = document.createElement("BUTTON");
+        var t33 = document.createTextNode("RateMe");
+        btn235.appendChild(t33);
+        document.getElementById("td235").appendChild(btn235);
+        var link235 = document.createElement('a');
+        var l33= document.createTextNode("Save");
+        link235.appendChild(l33);
+        link235.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td235").appendChild(link235);
+      }
+      
+      if (yourTime ==24){
+        document.getElementById("td24").innerHTML=
+        "12:00am :"+yourEvent;
+        var btn24 = document.createElement("BUTTON");
+        var t34 = document.createTextNode("RateMe");
+        btn24.appendChild(t34);
+        document.getElementById("td24").appendChild(btn24);
+        var link24 = document.createElement('a');
+        var l34= document.createTextNode("Save");
+        link24.appendChild(l34);
+        link24.setAttribute('href', "./shoodleChoices.php?TIME=" + escape(yourTime) + "&EVENT=" + escape(yourEvent));
+        document.getElementById("td24").appendChild(link24);
+      }
+ }
+}
+function loadXMLDoc(event)
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    event.target.innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","ajax_info.txt",true);
+xmlhttp.send();
+
+}
+
+</script>
+<h2 id="demo"><script >
+document.getElementById("demo").innerHTML = Date();
+</script> </h2>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-79v0{background-color:#00d2cb}
+.tg .tg-c7d0{background-color:#bbdaff}
+</style>
+<table class="tg" width="800" height="600">
+  <tr>
+    <th class="tg-79v0">7am-9am</th>
+    <th class="tg-79v0">9am-11am</th>
+    <th class="tg-79v0">11am-12pm</th>
+    <th class="tg-79v0">12pm-2pm</th>
+    <th class="tg-79v0">2pm-4pm</th>
+    <th class="tg-79v0">4pm-6pm</th>
+    <th class="tg-79v0">6pm-8pm</th>
+    <th class="tg-79v0">8pm-10pm</th>
+    <th class="tg-79v0">10pm-12pm</th>
+  </tr>
+  <tr>
+    <td class="tg-c7d0" id="td71">
+<?php
+
+   $host = "fall-2014.cs.utexas.edu";
+   $user = "tcox1990";
+   $pwd = "31AoaSQyLz";
+   $dbs = "cs329e_tcox1990";
+   $port = "3306";
+
+   $db = mysqli_connect ($host, $user, $pwd, $dbs, $port);
+   if (empty($db))
+   {
+     die("mysqli_connect failed: " . mysqli_connect_error());
+   } 
+
+
+
+$t7 = 7;
+$stmt = $mysqli->stmt_init();
+if ($stmt->prepare("SELECT * FROM CALENDAR
+    WHERE TIME = ?")) {
+       $stmt->bind_param("s", $t7);
+       $stmt->execute();
+       $result = $stmt->get_result();
+       while ($row = $result->fetch_row()) {
+           //do stuff with the data in the $row array
+           echo $row
+       }
+       $result->close();
+}
+$mysqli->close();?>
+</td>
+    <td class="tg-c7d0" id="td91"></td>
+    <td class="tg-c7d0" id="td11"></td>
+    <td class="tg-c7d0" id="td12"></td>
+    <td class="tg-c7d0" id="td14"></td>
+    <td class="tg-c7d0" id="td16"></td>
+    <td class="tg-c7d0" id="td18"></td>
+    <td class="tg-c7d0" id="td20"></td>
+    <td class="tg-c7d0" id="td22"></td>
+    
+  </tr>
+  <tr>
+    <td class="tg-c7d0" id="td75"></td>
+    <td class="tg-c7d0" id="td95"></td>
+    <td class="tg-c7d0" id="td115"></td>
+    <td class="tg-c7d0" id="td125"></td>
+    <td class="tg-c7d0" id="td145"></td>
+    <td class="tg-c7d0" id="td165"></td>
+    <td class="tg-c7d0" id="td185"></td>
+    <td class="tg-c7d0" id="td205"></td>
+    <td class="tg-c7d0" id="td225"></td>
+  </tr>
+  <tr>
+    <td class="tg-c7d0" id="td8"></td>
+    <td class="tg-c7d0" id="td10"></td>
+    <td class="tg-c7d0" id="td12"></td>
+    <td class="tg-c7d0" id="td13"></td>
+    <td class="tg-c7d0" id="td15"></td>
+    <td class="tg-c7d0" id="td17"></td>
+    <td class="tg-c7d0" id="td19"></td>
+    <td class="tg-c7d0" id="td21"></td>
+    <td class="tg-c7d0" id="td23"></td>
+  </tr>
+  <tr>
+    <td class="tg-c7d0" id="td85"></td>
+    <td class="tg-c7d0" id="105"></td>
+    <td class="tg-c7d0" id="td1251"></td>
+    <td class="tg-c7d0" id="td135"></td>
+    <td class="tg-c7d0" id="td155"></td>
+    <td class="tg-c7d0" id="td175"></td>
+    <td class="tg-c7d0" id="td195"></td>
+    <td class="tg-c7d0" id="td215"></td>
+    <td class="tg-c7d0" id="td235"></td>
+  </tr>
+  <tr>
+    <td class="tg-c7d0" id="td91"></td>
+    <td class="tg-c7d0" id="td111"></td>
+    <td class="tg-c7d0" id="td1252"></td>
+    <td class="tg-c7d0" id="td142"></td>
+    <td class="tg-c7d0"></td>
+    <td class="tg-c7d0"></td>
+    <td class="tg-c7d0"></td>
+    <td class="tg-c7d0"></td>
+    <td class="tg-c7d0"id="td24"></td>
+  </tr>
+ 
+</table>
+</div>
+
+</div>
+<div class=footer>
+<footer> <a href= ""> October 21st 2014</a>| <a href= ""> Damilola Shonaike</a>| <a href= ""> </a>| <a href= ""> Travis Cox</a>| <a href= ""> CS329E</a>| <a href= ""> Fall 2014</a>| 
+<br>
+<br>
+<p>CopyRight @Shoddle</p>
+</footer>
+</div>
+</body>
+</html>

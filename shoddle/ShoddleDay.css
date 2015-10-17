@@ -1,0 +1,209 @@
+html {
+  margin: 2px;
+  padding: 2px;
+  
+}
+
+body
+{
+  margin: 200px;
+  padding: 2px;
+  
+  margin:200px 200px;
+  font-family: "Times New Roman", Times, serif;
+ 
+  line-height: 150%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:50px;
+  width: 70%;
+  border-style:solid
+  border-color: #8CDF9F;
+  border-width: 10px;
+ 
+}
+
+.header
+{
+  position: absolute;
+  top: 50px;
+  max-height: 60px;
+  min-width: 960px;
+  max-width: 980px;
+  
+  vertical-align: middle;
+}
+
+h1
+{
+  font-size: 45px;
+ 
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  vertical-align: middle;
+  color: #822626;
+ 
+}
+.a{
+color: #822626;
+}
+
+.logo1{
+  postion:absolute;
+  top:20px;
+  margin-left:200px;
+}
+.logo2{
+position:relative;
+top:100px;
+margin-left:200px;
+
+}
+
+.adCol
+{
+  background-color: #D4C098;
+  position: absolute;
+  top: 250px;
+  left: 1200px;
+  width: 150px;
+  min-height: 700px;
+  margin: 27px;
+  padding-top: 1px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+   color: #822626;
+}
+
+.headlines
+{
+  position: absolute;
+   background-image: url('Cork-Board.png');
+  background-size: 1250px 800px;
+  background-repeat: no-repeat;
+  background-origin:content-box;
+  top: 250px;
+  left: 100px;
+  width: 1300px;
+  height:900px;
+  margin: 2px;
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+ color: #822626;
+ 
+ 
+}
+h2{
+ position:absolute;
+ top: 70px;
+ left:150px;
+ font-style: bold italic;
+ font-size: 36px;
+}
+#demo{
+ position:absolute;
+ top: 80px;
+ left:190px;
+ font-style: bold italic;
+ font-size: 36px;
+}
+
+.leftSide
+{
+position:relative;
+float: left;
+margin: 35px 35px;
+width: 400px;
+height:900px;
+ color: #822626;
+
+}
+.rightSide{
+ position:absolute;
+ margin:100px 475px;
+ width:200px;
+ height:900px;
+ color: #822626;
+font-weight: bold;
+font-size:15px;
+}
+.footer
+{
+  position: absolute;
+  top: 1200x;
+  min-width: 660px;
+  max-width: 680px;
+  min-height: 20px;
+  margin: 2px;
+  padding: 10px;
+  border-top: 1px double;
+  border-bottom: 1px solid;
+  clear: both;
+   color: #822626;
+}
+
+table{
+position:relative;
+top:150px;
+
+border: 5px;
+
+border-color:#A0522D;
+}
+li{
+display: inline;
+ background-color: #DFC08C;
+    width: 55px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#A0522D;
+    margin: 55px;
+     color: #822626;
+
+}
+
+td{
+padding:20px;
+}
+
+.place{
+display: inline;
+ background-color: #D1DF8C;
+    width: 25px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color:#C9DF8C;
+    margin: 25px;
+}
+
+p{
+ margin:5px;
+ font-weight:bold;
+}
+
+.footer
+{
+  position: absolute;
+  top: 1200px;
+  min-width: 560px;
+  max-width: 1280px;
+  min-height: 20px;
+  margin-left:175px;
+  padding: 5px;
+  border-top: 1px double;
+  border-bottom: 1px solid;
+  clear: both;
+}
+.evntBut{
+ position:absolute;
+ top:100px;
+ left:700px;
+ padding:10px;
+ background-color:#C9DF8B;
+}
